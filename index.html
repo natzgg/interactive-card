@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="left-section">
+          <div class="card-container">
+            <div class="back-card">
+              <img src="./images/bg-card-back.png" class="card-back" />
+              <div class="card-text-back">000</div>
+            </div>
+            <div class="front-card">
+              <div class="front-card-image-text">
+                <img src="./images/bg-card-front.png" class="card-front" />
+                <div class="card-text-front">
+                  <div class="upper">
+                    <img src="./images/card-logo.svg" />
+                  </div>
+                  <div class="middle">0000 0000 0000 0000</div>
+                  <div class="bottom">
+                    <div class="name">JANE APPLESEED</div>
+                    <div class="expiry">
+                      <span class="month-text">00</span>
+                      /
+                      <span class="year-text">00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="card-details">
+            <label for="card-holder" class="card-holder-name"
+              >CARDHOLDER NAME</label
+            >
+            <input
+              type="text"
+              class="card-holder"
+              name="card-holder"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <label for="card-number" class="card-number-label"
+              >CARD NUMBER</label
+            >
+            <input
+              type="text"
+              class="card-number"
+              name="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <div class="exp-cvc-labels">
+              <label for="expiry">EXP. DATE &#40;MM/YY&#41;</label>
+              <label for="cvc-input">CVC</label>
+            </div>
+            <div class="exp-cvc-inputs">
+              <input
+                type="text"
+                name="exp-month"
+                placeholder="MM"
+                class="exp-month"
+              />
+              <input
+                type="text"
+                name="exp-year"
+                placeholder="YY"
+                class="exp-year"
+              />
+              <input
+                type="text"
+                name="cvc-input"
+                placeholder="e.g. 123"
+                class="cvc-input"
+              />
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="confirm">Confirm</button>
+          </div>
+          <div class="thankyou-container not-visible">
+            <div class="thankyou-img-container">
+              <img src="./images/icon-complete.svg" alt="" />
+            </div>
+            <div class="thankyou-text">THANK YOU!</div>
+            <div class="info-text">We've added your card details.</div>
+            <button class="continue-btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
